@@ -1,0 +1,30 @@
+KUIS GAK PAKE LAMA! — Paket PWA Android (versi awal)
+
+ISI:
+- 500 pertanyaan dalam 8 kategori campuran
+- Timer 10 detik
+- Tampilan vertikal responsif
+- Mode 10 pertanyaan terakhir (tanpa menampilkan nomor/jumlah soal)
+- Input manual username dan jawaban penonton
+- Skor, streak, bonus jawaban cepat, dan pengurangan jawaban salah
+- Leaderboard selama sesi berlangsung
+- Panel supporter/gift terpisah (tidak menambah skor)
+- Papan hadiah: Rp50.000 / Rp25.000 / Rp10.000
+- PWA manifest dan service worker
+
+CARA PAKAI:
+1. Ekstrak ZIP.
+2. Upload seluruh isi folder ke hosting statis yang memberi alamat HTTPS (misalnya Netlify atau GitHub Pages).
+   Jangan upload ZIP sebagai satu file; upload file-file di dalam folder.
+3. Buka alamat HTTPS hasil hosting lewat Chrome Android.
+4. Pilih menu Chrome ⋮ > Tambahkan ke layar utama / Install app.
+5. Untuk LIVE: buka TikTok, mulai LIVE, pilih fitur Berbagi Layar/Screen Share bila tersedia.
+6. Setelah berbagi layar berjalan, pindah ke aplikasi Kuis. Tes terlebih dahulu dengan akun/perangkat lain bila memungkinkan.
+
+BATASAN PENTING:
+- Ini versi host-operated/manual. Komentar TikTok tidak dibaca otomatis; host mengetik username dan jawaban yang terlihat.
+- Gift/supporter juga dicatat manual. Gift tidak menambah skor atau peluang menang.
+- Belum ada sinkronisasi multi-perangkat/cloud; data sesi disimpan di memori halaman dan hilang jika halaman ditutup atau dimuat ulang.
+- Ketersediaan screen share dan cara berpindah aplikasi bergantung pada versi TikTok, akun, Android, serta izin sistem.
+- Untuk menampilkan kamera wajah bersamaan dengan permainan, perlu fitur layout/overlay dari TikTok atau perangkat/aplikasi tambahan; mode ini dirancang untuk full-screen game.
+- Uji alur screen share dan notifikasi sebelum LIVE sungguhan.

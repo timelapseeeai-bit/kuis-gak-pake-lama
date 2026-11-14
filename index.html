@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#080d27"><meta name="description" content="Kuis Gak Pake Lama - permainan kuis live interaktif">
+<link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon.svg">
+<title>KUIS GAK PAKE LAMA!</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="stars"></div><div class="nebula"></div>
+<header><div class="brand"><span class="astronaut">👨‍🚀</span><div><b>KUIS GAK PAKE LAMA!</b><small>LIVE QUIZ • SPACE EDITION</small></div></div><div class="live"><i></i> LIVE MODE</div></header>
+<main>
+<section class="hero">
+ <div class="eyebrow" id="category">PEMANTIK OTAK • SIAP?</div>
+ <div class="question" id="question">Tekan MULAI untuk membuka pertanyaan pertama!</div>
+ <div class="options" id="options"><div class="option muted">A · Siap-siap</div><div class="option muted">B · Fokus</div><div class="option muted">C · Jangan panik</div><div class="option muted">D · Gaskeun</div></div>
+ <div class="timerline"><div class="timerbar"><span id="timerbar"></span></div><strong id="timer">10</strong></div>
+ <div class="status" id="status">10 DETIK • JAWAB DI KOLOM KOMENTAR LIVE</div>
+ <div class="controls"><button class="primary" id="start">▶ MULAI KUIS</button><button id="next" disabled>SOAL BERIKUTNYA →</button></div>
+ <div class="last10" id="last10" hidden>🔥 10 PERTANYAAN TERAKHIR! 🔥</div>
+</section>
+<section class="grid">
+ <div class="panel">
+  <div class="panelhead"><h2>💬 JAWABAN PENONTON</h2><span class="tag">MANUAL</span></div>
+  <p class="hint">Masukkan username dan pilihan jawaban sesuai komentar LIVE.</p>
+  <div class="entry"><input id="username" placeholder="@username" maxlength="24"><select id="answer"><option value="">Pilih A–D</option><option value="0">A</option><option value="1">B</option><option value="2">C</option><option value="3">D</option></select><button id="submit">KIRIM</button></div>
+  <div id="feed" class="feed"><div class="empty">Belum ada jawaban masuk.</div></div>
+ </div>
+ <div class="panel">
+  <div class="panelhead"><h2>🏆 LEADERBOARD</h2><span class="tag">SESI LIVE</span></div>
+  <div id="leaderboard" class="leaderboard"><div class="empty">Pemain akan muncul di sini.</div></div>
+ </div>
+ <div class="panel supporters">
+  <div class="panelhead"><h2>🎁 SUPPORTER LIVE</h2><span class="tag">APRESIASI</span></div>
+  <p class="hint">Catat pendukung/gift secara manual. Tidak menambah skor kuis.</p>
+  <div class="entry"><input id="supporter" placeholder="@nama pendukung" maxlength="24"><input id="gift" placeholder="Nama gift" maxlength="24"><button id="addgift">TAMBAH</button></div>
+  <div id="giftlist" class="giftlist"><div class="empty">Belum ada supporter tercatat.</div></div>
+ </div>
+</section>
+<section class="bottom">
+ <div class="prizes"><b>🎖 HADIAH PEMENANG</b><span>🥇 Rp50.000</span><span>🥈 Rp25.000</span><span>🥉 Rp10.000</span></div>
+ <div class="footer"><span>500 BANK SOAL • TIMER 10 DETIK</span><span>Gratis ikut • Menang berdasarkan skor kuis</span></div>
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body></html>
